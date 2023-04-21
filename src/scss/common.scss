@@ -1,0 +1,36 @@
+.description{
+    font-family: 'Poppins';
+    line-height: 167%;
+    color: #777A73;
+}
+
+.border-button{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #588535;
+    cursor: pointer;
+
+    padding: 15px 55px;
+    border: 1px $green solid;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+}
+
+.header-of-page{
+    .header-of-page__title{
+        text-align: center;
+        font-weight: 700;
+        @include adaptive_value('font-size', 40, 24, 0);
+        line-height: 150%;     
+        color: #22271C;    
+        @include adaptive_value('margin-bottom', 10, 5, 0);  
+    }
+    .header-of-page__description{
+        text-align: center;
+        line-height: 150%;
+        @include adaptive_value('font-size', 16, 14, 0);
+    }
+}
